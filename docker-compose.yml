@@ -1,0 +1,15 @@
+version: "3.8"
+
+services:
+  mongo:
+    build: .
+    ports:
+      - "27019:27019"
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=mongoadmin
+      - MONGO_INITDB_ROOT_PASSWORD=secret   
+    volumes:
+      - mongo-db:/data/db
+
+volumes:
+  mongo-db:
