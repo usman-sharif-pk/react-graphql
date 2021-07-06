@@ -2,6 +2,8 @@
     "env": {
         "MONGO_DB_USERNAME": "usman",
         "MONGO_DB_PASSWORD": "qUB9pJWN0jwC2nZj",
-        "MONGO_DB_DATABASE": "graphql-events"
+        "MONGO_DB_DATABASE": "graphql-events",
+        "JWT_REFRESH_SECRET": "430fd8d7b5bdd35de94b06d07b37a4724ead8d7efdfb92030f99123aeadce79de8c840929d7b8a70ed8dbb63ca87943cb7ce5058e3104b3534f0b894f404cc4f",
+        "JWT_ACCESS_SECRET": "4f00589cc1b008cc3d236849c49343512ca0f7b4f3d5d32f226b44abaf0170f3ac7b34a24ab2b16441f40c33b05ac333d19ce9a1221d767aba4ae345c44ee168"
     }
 }

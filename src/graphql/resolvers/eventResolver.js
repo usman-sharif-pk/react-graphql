@@ -11,7 +11,10 @@ module.exports = {
       throw error;
     }
   },
-  createEvent: async (args) => {
+  createEvent: async (args, req) => {
+    if (!req.isAuthenticated) {
+      throw new Error("Uthenticated!!!");
+    }
     const { eventInput } = args;
     const eventPayload = {
       title: eventInput.title,
